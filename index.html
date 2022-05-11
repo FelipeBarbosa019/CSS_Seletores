@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Seletores</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
     <strong class="texto"t>Este arquivo tem fins didáticos</strong> <br><br>
 
@@ -15,14 +17,55 @@
 
     <h1 class="titulo_principal">Seletores:</h1><br>
 
-    <h2>Seletores do tipo class:</h2><br>
-    <p class="texto">Um elemento pode ter mais de uma classe e essa classe pode se repetir em mais de um elemento. É identificado no CSS por um seletor iniciado com "."</p</p><br><br><br>
+    <div class="texto">
 
-    <h2>Seletores do tipo ID:</h2><br>  
-    <p id="exemplo_id">Um elemento poder ter apenas um ID, ou seja, não pode se repetir, como neste exemplo. É identificado no CSS por um seletor iniciado com "#"</p><br><br><br>
+        <h2>Seletores do tipo class:</h2><br>
+        Um elemento pode ter mais de uma classe e essa classe pode se repetir em mais de um elemento. É identificado no CSS por um seletor iniciado com "."<br><br><br>
 
-    <h2>Pseudo-classes:</h2><br>  
-    <p class="texto">Este seletor especifica um estado especial do elemento selecionado. É identificado por ":" após o seletor, exemplos:</p>
+        <h2>Seletores do tipo ID:</h2><br>  
+        <p id="exemplo_id">Um elemento poder ter apenas um ID, ou seja, não pode se repetir, como neste exemplo. É identificado no CSS por um seletor iniciado com "#"</p><br><br>
+
+        <h2>Pseudo-classes:</h2><br>  
+        Este seletor especifica um estado especial do elemento selecionado. É identificado por ":" após o seletor, alguns exemplos:<br><br>
+
+        <li><i>seletor:focus - <a href="https://github.com/FelipeBarbosa019" class="exemplo"> GitHub</a><br></i></li>
+        <li><i>seletor:visited - <a href="https://www.linkedin.com/in/felipe-barbosa-a997351bb/" class="exemplo2"> Linkedin</a><br></i></li>
+        <li><i class="exemplo3">seletor:hover - Passe o cursor aqui</i></li><br><br>
+
+        <h2>Pseudo-elementos:</h2><br> 
+        Permite que você estilize uma parte específica do elemento selecionado. É identificado por "::" após o seletor, alguns exemplos:<br><br>
+
+        <li><i class="pseudo_elementos">seletor::selection - Selecione o texto para exemplo.</i></li>
+        <li><i class="pseudo_elementos2">seletor::after - Após cada pseudo-elemento é possível registrar alguma informações</i></li>
+        <li><i> seletor::before - </i><i class="pseudo_elementos3"> Antes cada pseudo-elemento é possível registrar alguma informações</i></li><br><br>
+
+        <h2>Combinadores:</h2><br> 
+        Os combinadores definem a relação entre dois seletores. Existem quatro combinadores diferentes, sendo eles:<br><br>
+
+        <li><strong>Seletores de irmãos adjacentes:</strong></li> 
+        O combinador "+"    seleciona os nós que seguem imediatamente o elemento especificado anteriormente.<br>
+        Sintaxe: A + B <br>
+        Exemplo: ul + li irá corresponder a qualquer elemento < li > que segue imediatamente após um elemento < ul >. <br><br>
+
+        <li><strong>Seletores gerais de irmãos:</strong></li>
+        O combinador "~" seleciona os nós que seguem (não necessariamente imediatamente) o elemento especificado anteriormente, se ambos os elementos compartilham o mesmo pai.<br>
+        Sintaxe: A ~ B<br>
+        Exemplo: p ~ span irá corresponder a todo elemento < span > que seguir um elemento < p > dentro de um mesmo elemento pai.<br><br>
+
+        <li><strong>Seletor de filhos:</strong></li>
+        O combinador ">" selecina nós que são filhos diretos do elemento especificado anteriormente.<br>
+        Sintaxe: A > B <br>
+        Exemplo: ul > li irá corresponder a todo elemento < li > que estiver diretamente dentro de um elemento < ul > especificado.<br><br>
+
+        <li><strong>Seletor de descendentes:</strong></li>
+        O combinador " "  seleciona os nós que são filhos do elemento especificado anteriormente (não é necessário que seja um filho direto).<br>
+        Sintaxe: A B <br>
+        Exemplo: div span irá corresponder a todo e qualquer elemento < span > que estiver dentro do elemento < div >. <br><br>
+
+        <h5>As informações de combinadores deste arquivo, foram obitadas no site: <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors">https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors</a></h5>
+        <h5>Inseri exemplos práticos, entretano ficou poluído e confuso. Portanto, optei por deixar o link para consultas futuras, que exemplifica muito bem o uso dos combinadores:  <a href="https://www.youtube.com/watch?v=9EZujLw4ung&ab_channel=B%C3%B3sonTreinamentos">Vídeo boson treinamentos</a></h5>
+
+    </div>
 
 
 </body>

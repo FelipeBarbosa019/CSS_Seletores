@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +6,7 @@
 }
 
 body {
-    background: linear-gradient(68.15deg, rgb(33, 34, 33) 17%, rgb(68, 177, 92) 83%
-    );
+    background: linear-gradient(68.15deg, rgb(33, 34, 33) 17%, rgb(68, 177, 92) 83%);
 }
 
 .texto {
@@ -17,15 +14,49 @@ body {
     color: rgb(218, 219, 205);
 }
 
+/*link não visitado*/
+.exemplo:focus {
+    color: rgb(171, 222, 241);
+}
+
+/* Link visitado: */
+.exemplo2:visited {
+    color: rgb(241, 24, 24);
+}
+
+
+.exemplo3:hover {
+    color: rgb(25, 230, 52)
+}
+
+.pseudo_elementos::selection {
+        background-color: rgb(231, 247, 12);
+        color: red;
+}
+
+.pseudo_elementos2::after {
+    content: ' [Exemplo]';
+    color: rgb(129, 129, 129);
+}
+
+.pseudo_elementos3::before {
+    content: '[Exemplo] ';
+    color: rgb(129, 129, 129);
+}
+
 h1 {
     color: rgb(43, 228, 228);
-    font-family: 'Amaranth', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 {
-    color: aquamarine;,
-    font-family: 'Roboto', sans-serif;
+    color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+h5 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(218, 219, 205);
 }
 
 #exemplo_id {
